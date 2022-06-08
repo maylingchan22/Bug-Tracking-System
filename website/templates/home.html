@@ -2,6 +2,7 @@
 {% block title %} Home {% endblock %}
 
 {% block content %}
+<div class="mx-auto" style="width: 90%;">
 <h1 align = "center"> Notes </h1>
 <ul class = "list-group list-group-flush" id = "notes">
     {% for note in user.notes %}
@@ -16,7 +17,8 @@
     <textarea name = "note" id = "note" class = "form-control"> </textarea>
     <div align = "center">
     </br>
-        <button type = "submit" clas = "btn btn-primary" > Add Note </button>
+        <button type = "submit" class = "btn btn-outline-primary" > Add Note </button>
     </div>
+</div>
 </form>
 {% endblock %}
